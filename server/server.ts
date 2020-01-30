@@ -1,9 +1,9 @@
-require('dotenv').config()
-const express = require('express')
-const session = require('express-session')
+import dotenv = require('dotenv')
+import express = require('express')
+import session = require('express-session')
 const ctrl = require('./controller')
-const massive = require('massive')
-const {CONNECTION_STRING, SESSION_SECRET, SERVER_PORT} = process.env
+import massive = require('massive')
+import {CONNECTION_STRING, SERVER_PORT, SESSION_SECRET} from process.env
 
 const app = express()
 
